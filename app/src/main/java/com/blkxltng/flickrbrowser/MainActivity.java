@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity implements GetFlickrJsonData
         Log.d(TAG, "onResume starts");
         super.onResume();
         GetFlickrJsonData getFlickrJsonData = new GetFlickrJsonData(this, "https://api.flickr.com/services/feeds/photos_public.gne", "en-us,", true);
-        getFlickrJsonData.executeOnSameThread("sonic, hedgehog");
+//        getFlickrJsonData.executeOnSameThread("sonic, hedgehog");
+        getFlickrJsonData.execute("sonic,hedgehog");
+        Log.d(TAG, "onResume ends");
     }
 
     @Override
