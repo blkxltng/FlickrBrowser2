@@ -33,6 +33,15 @@
                     android:layout_margin="8dp"
                     android:text="TextView"/>
 
+                <ImageView
+                    android:id="@+id/photo_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/placeholder"/>
+
                 <TextView
                     android:id="@+id/photo_title"
                     android:layout_width="match_parent"
@@ -46,15 +55,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="TextView"/>
-
-                <ImageView
-                    android:id="@+id/photo_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/placeholder"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
